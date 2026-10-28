@@ -3,89 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mimiche's Food — Cuisine Guinéenne Authentique | Conakry</title>
+  <title>Mimiche's Food | Cuisine Guinéenne à Conakry</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    .lang-fr { display: block; } .lang-en { display: none; }
-    body.en .lang-fr { display: none; } body.en .lang-en { display: block; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .lang-en { display: none; }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
-  <div class="bg-amber-100 text-amber-900 text-center text-sm py-2 px-4 sticky top-0 z-50">
-    <span class="lang-fr">Maquette offerte par Al-Falah Marketing — rien n’est en ligne sous votre nom.</span>
-    <span class="lang-en">Complimentary mockup by Al-Falah Marketing — nothing is live under your name.</span>
+<body class="bg-slate-50 text-slate-800">
+  <div class="bg-amber-50 border-b border-amber-200 text-amber-900 text-center text-sm py-2 px-4">
+    Maquette gratuite par Al-Falah Marketing — rien n'est en ligne sous votre nom. / Complimentary mockup by Al-Falah Marketing — nothing is live under your name.
   </div>
-  <header class="bg-white/90 backdrop-blur sticky top-8 z-40 shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="font-bold text-xl text-teal-700">Mimiche's Food</div>
-      <div class="flex items-center gap-4">
-        <button onclick="document.body.classList.toggle('en')" class="text-sm border rounded px-2 py-1">EN / FR</button>
-        <a href="https://wa.me/224612888882" class="bg-teal-600 text-white px-4 py-2 rounded-lg text-sm font-medium">WhatsApp</a>
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-bold text-xl text-slate-900">Mimiche's Food</div>
+      <div class="flex items-center gap-3">
+        <button onclick="toggleLang()" class="text-sm px-3 py-1 rounded-full border">FR / EN</button>
+        <a href="https://wa.me/224612888882" class="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium">WhatsApp</a>
       </div>
     </div>
   </header>
-  <section class="relative h-96 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200');">
-    <div class="absolute inset-0 bg-slate-900/60 flex items-center">
-      <div class="max-w-4xl mx-auto px-4 text-white text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 lang-fr">Le goût authentique de la Guinée</h1>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 lang-en">Authentic Guinean Flavors</h1>
-        <p class="text-lg mb-6 lang-fr">Tö, Lafidi, Riz au gras et plus — à Lambanyi, Carrefour Canadien</p>
-        <p class="text-lg mb-6 lang-en">Tö, Lafidi, Riz au gras and more — at Lambanyi, Carrefour Canadien</p>
-        <div class="flex justify-center gap-4">
-          <a href="https://wa.me/224612888882" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-xl font-semibold">Commander</a>
-          <a href="tel:+224612888882" class="bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold">Appeler</a>
-        </div>
+  <section class="relative h-[70vh] min-h-[480px] bg-cover bg-center" style="background-image: linear-gradient(rgba(15,23,42,0.55), rgba(15,23,42,0.55)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80');">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 lang-fr">Le goût authentique de la Guinée</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 lang-en">Authentic Guinean Flavor</h1>
+      <p class="text-lg md:text-xl max-w-2xl mb-6 lang-fr">Lafidi, Tô, riz au gras, poisson braisé et plus — à Lambanyi, Carrefour Canadien.</p>
+      <p class="text-lg md:text-xl max-w-2xl mb-6 lang-en">Lafidi, Tô, rice, grilled fish and more — at Lambanyi, Carrefour Canadien.</p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/224612888882?text=Bonjour%20Mimiche's%20Food%2C%20je%20souhaite%20commander" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-full font-medium">Commander via WhatsApp</a>
+        <a href="tel:+224612888882" class="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-full font-medium border">Appeler</a>
       </div>
     </div>
   </section>
-  <div class="bg-slate-800 text-white text-xs py-2 text-center">Laurel MD · Coyah GN · Freetown SL — Al-Falah Marketing</div>
-  <section class="py-12 max-w-6xl mx-auto px-4">
+  <section class="max-w-5xl mx-auto px-4 py-12">
     <h2 class="text-3xl font-bold text-center mb-8 lang-fr">Nos Spécialités</h2>
     <h2 class="text-3xl font-bold text-center mb-8 lang-en">Our Specialties</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-2xl shadow overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600" alt="Lafidi" class="h-48 w-full object-cover">
-        <div class="p-4"><h3 class="font-bold text-lg">Lafidi</h3><p class="text-sm text-slate-600">Soumbara, poulet ou poisson</p></div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80" alt="Lafidi" class="w-full h-48 object-cover">
+        <div class="p-4"><h3 class="font-semibold text-lg">Lafidi</h3><p class="text-sm text-slate-600 mt-1">Soumbara, poulet ou poisson</p></div>
       </div>
-      <div class="bg-white rounded-2xl shadow overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600" alt="Riz gras" class="h-48 w-full object-cover">
-        <div class="p-4"><h3 class="font-bold text-lg">Riz au gras</h3><p class="text-sm text-slate-600">Classique guinéen</p></div>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80" alt="Riz au gras" class="w-full h-48 object-cover">
+        <div class="p-4"><h3 class="font-semibold text-lg">Riz au gras</h3><p class="text-sm text-slate-600 mt-1">Classique guinéen</p></div>
       </div>
-      <div class="bg-white rounded-2xl shadow overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600" alt="Tö" class="h-48 w-full object-cover">
-        <div class="p-4"><h3 class="font-bold text-lg">Tö & Bouillie</h3><p class="text-sm text-slate-600">Plats traditionnels</p></div>
-      </div>
-    </div>
-  </section>
-  <section class="py-12 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Galerie</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400" class="rounded-xl h-40 object-cover">
-        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400" class="rounded-xl h-40 object-cover">
-        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400" class="rounded-xl h-40 object-cover">
-        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400" class="rounded-xl h-40 object-cover">
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80" alt="Poisson braisé" class="w-full h-48 object-cover">
+        <div class="p-4"><h3 class="font-semibold text-lg">Poisson braisé</h3><p class="text-sm text-slate-600 mt-1">Avec attiéké, aloko</p></div>
       </div>
     </div>
   </section>
-  <section class="py-12 max-w-2xl mx-auto px-4 text-center">
+  <section class="bg-white py-12">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Ambiance</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-32 object-cover" alt="">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-32 object-cover" alt="">
+        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-32 object-cover" alt="">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-32 object-cover" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="max-w-5xl mx-auto px-4 py-12 text-center">
     <h2 class="text-2xl font-bold mb-4">Contact</h2>
-    <p class="mb-2">Lambanyi — Carrefour Canadien, Conakry</p>
-    <p class="mb-4"><a href="tel:+224612888882" class="text-teal-600 font-semibold">+224 612 88 88 82</a></p>
-    <a href="https://wa.me/224612888882?text=Bonjour%20Mimiche%27s%20Food%2C%20je%20souhaite%20commander" class="inline-block bg-green-500 text-white px-8 py-3 rounded-xl font-bold">WhatsApp</a>
+    <p>Lambanyi, Carrefour Canadien, Conakry</p>
+    <p class="mt-2"><a href="tel:+224612888882" class="text-teal-600 font-medium">+224 612 88 88 82</a></p>
+    <a href="https://wa.me/224612888882" class="inline-block mt-4 bg-teal-600 text-white px-6 py-3 rounded-full">WhatsApp</a>
   </section>
   <footer class="bg-slate-900 text-slate-300 py-8 text-sm">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <p>Mimiche's Food · Conakry, Guinée</p>
-      <p class="mt-2">Maquette offerte par <strong>Al-Falah Marketing</strong> · Laurel, MD · Coyah · Freetown<br>
-      <a href="https://al-falahmarketing.com" class="text-teal-400">al-falahmarketing.com</a> · info@al-falahmarketing.com</p>
-      <p class="mt-4 text-xs">© 2026 · Rien n’est publié sous votre nom.</p>
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <p>Maquette de démonstration par <strong>Al-Falah Marketing</strong></p>
+      <p class="mt-1">Laurel, MD • Coyah, Guinée • Freetown, Sierra Leone</p>
+      <p class="mt-1">info@al-falahmarketing.com • +1 240 280 6137 • +224 611 351 302</p>
+      <p class="mt-2 text-xs opacity-70">Rien n'est publié sous le nom de Mimiche's Food. Contactez-nous pour personnaliser avec vos photos et menu.</p>
     </div>
   </footer>
-  <div class="fixed bottom-0 left-0 right-0 bg-white border-t flex md:hidden">
-    <a href="tel:+224612888882" class="flex-1 py-3 text-center font-semibold">Appeler</a>
-    <a href="https://wa.me/224612888882" class="flex-1 py-3 text-center bg-teal-600 text-white font-semibold">WhatsApp</a>
-  </div>
+  <script>
+    function toggleLang() {
+      document.querySelectorAll('.lang-fr, .lang-en').forEach(el => {
+        el.classList.toggle('lang-fr');
+        el.classList.toggle('lang-en');
+      });
+    }
+  </script>
 </body>
 </html>
